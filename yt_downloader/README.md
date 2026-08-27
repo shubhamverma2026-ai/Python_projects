@@ -1,24 +1,36 @@
+<img width="1483" height="617" alt="image" src="https://github.com/user-attachments/assets/56e3edf4-bf67-49c3-b2ea-6f51e3cb3935" />
+
 # YouTube Video Downloader
 
-A simple Python program that downloads a YouTube video using the `yt-dlp` library and saves it to a folder chosen by the user.
+A simple YouTube video downloader built with **Gradio** and **yt-dlp**.
 
 ## Features
 
-- Takes a YouTube URL from the user
-- Takes a download folder path
-- Downloads the best available MP4 format
-- Saves the video using its original title
-- Uses the `yt-dlp` library
-
-## Requirements
-
-- Python 3.x
-- yt-dlp library
-- Internet connection
+* Enter a YouTube URL
+* Download the video
+* Videos are saved in the `downloads` folder
+* Simple web interface
 
 ## Installation
 
-Install `yt-dlp` using:
+```bash
+pip install gradio yt-dlp
+```
+
+## Run
 
 ```bash
-pip install yt-dlp
+python app.py
+```
+
+The app will open in your browser.
+
+## Project Structure
+
+```text
+project/
+├── app.py
+└── downloads/
+```
+
+
