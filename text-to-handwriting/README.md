@@ -2,6 +2,8 @@
 
 A simple Streamlit app that converts typed text into a handwritten-style image.
 
+URL : https://text2handwriting.streamlit.app/
+
 ## Features
 
 * Enter your text
