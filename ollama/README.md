@@ -1,27 +1,35 @@
-# 🤖 Local Llama Chatbot
+🔌 Electronics Mentor
 
-A simple chatbot made with **Streamlit** and **Llama 3.2** using **Ollama**.
-<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/db1e863b-9062-4845-b88d-4e0095f9f74b" />
+<img width="1917" height="1031" alt="image" src="https://github.com/user-attachments/assets/a505a491-d713-4818-99af-39e116978854" />
+Use "streamlit run app.py" command for starting the bot 
 
 
-## Requirements
 
-* Python
-* Streamlit
-* Ollama
-* Llama 3.2 model
+An AI-powered Electronics Mentor built with Python, Streamlit, and Llama 3.2 through Ollama. The chatbot is specifically designed to answer questions related to Electronics and politely reject unrelated topics.
 
-## Install
+✨ Features
+🤖 AI-powered chatbot using Llama 3.2
+🔌 Strictly focused on Electronics
+💬 Interactive chat interface using Streamlit
+🧠 Maintains conversation history during the session
+📚 Beginner-friendly explanations
+⚡ Covers both analog and digital electronics
 
-```bash
-pip install streamlit requests
-ollama pull llama3.2
-```
+🎯 Project Objective
 
-## Run
+The objective of this project is to demonstrate how a domain-specific AI assistant can be built using a local Large Language Model and a simple Python-based web interface.
 
-```bash
-streamlit run app.py
-```
+Rather than functioning as a general-purpose chatbot, Electronics Mentor uses a dedicated system prompt to restrict responses to Electronics-related topics.
 
-Make sure Ollama is running before starting the app.
+🚀 Future Improvements
+🌐 Online AI API for public deployment
+🔒 Secure API key management using Streamlit Secrets
+📊 Electronics diagrams and visual explanations
+📄 PDF/notes summarization
+🧮 Circuit calculations
+🔬 Interactive circuit simulations
+🎙️ Voice-based questions
+🌙 Improved UI and themes
+📜 License
+
+This project is intended for educational and learning purposes.
