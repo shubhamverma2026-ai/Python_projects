@@ -1,35 +1,92 @@
-🔌 Electronics Mentor
+# 🔌 Electronics Mentor
 
 <img width="1917" height="1031" alt="image" src="https://github.com/user-attachments/assets/a505a491-d713-4818-99af-39e116978854" />
-Use "streamlit run app.py" command for starting the bot 
 
 
+A simple AI chatbot built using **Python, Streamlit, Ollama, and Llama 3.2**.
 
-An AI-powered Electronics Mentor built with Python, Streamlit, and Llama 3.2 through Ollama. The chatbot is specifically designed to answer questions related to Electronics and politely reject unrelated topics.
+The chatbot is designed to answer **Electronics-related questions only**.
 
-✨ Features
-🤖 AI-powered chatbot using Llama 3.2
-🔌 Strictly focused on Electronics
-💬 Interactive chat interface using Streamlit
-🧠 Maintains conversation history during the session
-📚 Beginner-friendly explanations
-⚡ Covers both analog and digital electronics
+## Features
 
-🎯 Project Objective
+* 🤖 Uses Llama 3.2
+* 🔌 Electronics-focused AI mentor
+* 💬 Chat interface using Streamlit
+* 🧠 Maintains chat history
+* 📚 Beginner-friendly explanations
+* 🚫 Rejects questions unrelated to Electronics
+* 🌙 Simple dark UI
 
-The objective of this project is to demonstrate how a domain-specific AI assistant can be built using a local Large Language Model and a simple Python-based web interface.
+## Technologies
 
-Rather than functioning as a general-purpose chatbot, Electronics Mentor uses a dedicated system prompt to restrict responses to Electronics-related topics.
+* Python
+* Streamlit
+* Ollama
+* Llama 3.2
+* Requests
 
-🚀 Future Improvements
-🌐 Online AI API for public deployment
-🔒 Secure API key management using Streamlit Secrets
-📊 Electronics diagrams and visual explanations
-📄 PDF/notes summarization
-🧮 Circuit calculations
-🔬 Interactive circuit simulations
-🎙️ Voice-based questions
-🌙 Improved UI and themes
-📜 License
+## Installation
 
-This project is intended for educational and learning purposes.
+Install the required libraries:
+
+```bash
+pip install streamlit requests
+```
+
+Install and run Llama 3.2 using Ollama:
+
+```bash
+ollama pull llama3.2
+```
+
+## Run the Project
+
+```bash
+streamlit run app.py
+```
+
+The app will open at:
+
+```text
+http://localhost:8501
+```
+
+## How It Works
+
+```text
+User Question
+      ↓
+Streamlit
+      ↓
+System Prompt
+      ↓
+Ollama
+      ↓
+Llama 3.2
+      ↓
+Electronics Mentor Response
+```
+
+## Topics Covered
+
+The chatbot can help with:
+
+* Circuit Theory
+* Analog Electronics
+* Digital Electronics
+* Diodes
+* Transistors
+* Op-Amps
+* Semiconductors
+* Microcontrollers
+* Embedded Systems
+* PCB Design
+* Sensors
+* Power Electronics
+* Signal Processing
+
+## Note
+
+This project currently uses **Ollama locally**, so Ollama and the `llama3.2` model must be running on the computer where the application is being used.
+
+> **Built for learning Electronics with AI. 🔌🤖**
