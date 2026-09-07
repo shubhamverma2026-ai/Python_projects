@@ -1,98 +1,39 @@
 # 💻 AI Code Writer
+<img width="1915" height="970" alt="image" src="https://github.com/user-attachments/assets/c7cd2687-be5e-4809-8ae4-379ec0ae5e27" />
 
-AI Code Writer is a simple web application built with **Streamlit** that uses **Llama 3.2** through **Ollama** to generate, explain, debug, optimize, and convert code.
 
-## ✨ Features
+A simple Streamlit app that uses a local Llama model (via Ollama) to **write** or **explain** code.
 
-* 📝 Generate code from a natural-language prompt
-* 📖 Explain existing code
-* 🐛 Debug code
-* ⚡ Optimize code
-* 🔄 Convert code between programming languages
-* 🌐 Supports multiple programming languages
-* 🎨 Simple dark-themed Streamlit interface
-* 🤖 Runs Llama locally using Ollama
+## Features
+- **Write Code** – describe what you want, get generated code back.
+- **Explain Code** – paste existing code and get a clear, step-by-step explanation.
+- Choose the programming language and Llama model from the sidebar.
 
-## 🛠️ Technologies Used
+## Requirements
+- Python 3.9+
+- [Streamlit](https://streamlit.io/)
+- [Ollama](https://ollama.com/) running locally with a model pulled (e.g. `llama3.2`)
 
-* Python
-* Streamlit
-* Ollama
-* Llama 3.2
-* Requests
-
-## 📋 Supported Languages
-
-* Python
-* C
-* C++
-* Java
-* JavaScript
-* HTML/CSS
-* SQL
-* Bash
-
-## 🚀 Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/ai-code-writer.git
-cd ai-code-writer
-```
-
-### 2. Install the required Python packages
-
+## Setup
 ```bash
 pip install streamlit requests
-```
-
-### 3. Install Ollama
-
-Install Ollama and make sure it is running on your system.
-
-Then download the Llama 3.2 model:
-
-```bash
 ollama pull llama3.2
+ollama serve
 ```
 
-### 4. Run the application
-
+## Run
 ```bash
-streamlit run app.py
+streamlit run ai_code_writer.py
 ```
 
-The application will open in your browser.
+The app will open in your browser at `http://localhost:8501`.
 
-## 💡 How It Works
+## Usage
+1. Pick a **Programming Language** and **Task** (Write Code / Explain Code) in the sidebar.
+2. For **Write Code**: describe what you want in the text box.
+3. For **Explain Code**: paste your code (and optionally note what to focus on).
+4. Click the button and wait for the AI's response.
 
-1. Select a programming language.
-2. Select the task you want to perform.
-3. Describe your requirement.
-4. If required, paste your existing code.
-5. Click **Generate Code**.
-6. Llama 3.2 processes the request through Ollama and returns the result.
-
-## 📌 Example
-
-**Prompt:**
-
-```text
-Create a Python program that reads a CSV file and calculates the average marks.
-```
-
-The AI will generate the corresponding code based on the selected language and task.
-
-## ⚠️ Requirements
-
-* Python 3.8+
-* Ollama installed and running
-* Llama 3.2 model downloaded
-* Internet connection for initial package/model installation
-
-## 👨‍💻 Author
-
-**Shubham**
-
-A simple AI-powered coding assistant built using **Llama 3.2 + Streamlit + Ollama**.
+## Notes
+- Requires Ollama to be running locally on port `11434`.
+- If you see a connection error, make sure `ollama serve` is active and the model name matches a model you've pulled.
